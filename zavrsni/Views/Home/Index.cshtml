@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulseApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css" /> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+</head>
+<body>
+    <div id="ageInputContainer" class="form-container" style="margin-top: 100px;">
+        <h1 class="display-4">Enter patient details</h1>
+        <form id="ageForm">
+            <div class="form-group">
+                <input type="text" id="userName" class="form-control" placeholder="Enter your name" required style="width: 100%; margin: 0 auto;">
+            </div>
+            <div class="form-group">
+                <input type="text" id="userSurname" class="form-control" placeholder="Enter your surname" required style="width: 100%; margin: 0 auto;">
+            </div>
+            <div class="form-group">
+                <input type="number" id="userAge" class="form-control" placeholder="Enter your age" required min="1" max="120" style="width: 100%; margin: 0 auto;">
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+
+    <div class="container-flex" id="content" style="display:none;">
+        <div class="box" id="pulseBox">
+            <h1 id="patientName">Patient's name: </h1>
+            <img src="~/heart.gif" alt="Heart Image">
+            <div id="pulseData">
+                <h2 id="currentPulse">Loading...</h2>
+            </div>
+        </div>
+        <div class="box" id="statsBox">
+            <h1>Statistics</h1>
+            <p>Maximum Pulse: <span id="maxPulse">--</span> BPM</p>
+            <p>Minimum Pulse: <span id="minPulse">--</span> BPM</p>
+            <p>Average Pulse: <span id="avgPulse">--</span> BPM</p>
+        </div>
+    </div>
+
+    <div class="wide-box" id="zoneContainer" style="display:none;">
+        <div class="zone-container">
+            <div class="zone zone1">Zone 1</div>
+            <div class="zone zone2">Zone 2</div>
+            <div class="zone zone3">Zone 3</div>
+            <div class="zone zone4">Zone 4</div>
+            <div class="zone zone5">Zone 5</div>
+            <div class="zone zone6">Zone 6</div>
+        </div>
+        <h3 id="zoneIndicator" style="margin-top: 20px;">Zone Indicator</h3> 
+    </div>
+
+   
+    <div class="wide-box" id="chartContainer" style="display:none;">
+        <canvas id="pulseChart"></canvas>
+    </div>
+
+    <div id="warningMessage" class="warning" style="display:none;">
+        Warning! Pulse Dangerously Low
+    </div>
+    <div class="wide-box" id="pieChartContainer" style="display:none;">
+        <canvas id="zonePieChart"></canvas> 
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

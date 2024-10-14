@@ -1,0 +1,103 @@
+﻿@{
+    ViewData["Title"] = "Patient History";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PulseApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css">
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            background-color: #282172; 
+            color: #333;
+        }
+
+        .container {
+            margin-top: 20px;
+            background-color: #fff; 
+            border-radius: 8px; 
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        h1 {
+            color: #282172; 
+            font-size: 2rem; 
+        }
+
+        table {
+            margin-top: 20px;
+        }
+
+            table th, table td {
+                text-align: center;
+                padding: 10px;
+            }
+
+            table th {
+                background-color: #282172; 
+                color: #fff; 
+            }
+
+            table td {
+                background-color: #f8f9fa; 
+            }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Patient History</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane</td>
+                    <td>Smith</td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Michael</td>
+                    <td>Johnson</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Emily</td>
+                    <td>Williams</td>
+                    <td>52</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

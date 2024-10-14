@@ -1,0 +1,237 @@
+﻿body {
+    background-color: #282172;
+    color: #fff4f4;
+    font-family: 'Garamond', serif;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.box, .wide-box {
+    background-color: #3c3b74;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 48%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wide-box {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    margin: 20px auto;
+}
+
+.zone-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.zone {
+    width: 16%;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.zone1 {
+    background-color: #add8e6;
+}
+
+.zone2 {
+    background-color: #4caf50;
+}
+
+.zone3 {
+    background-color: #2196f3;
+}
+
+.zone4 {
+    background-color: #ffeb3b;
+}
+
+.zone5 {
+    background-color: #ff9800;
+}
+
+.zone6 {
+    background-color: #f44336;
+}
+
+.warning {
+    display: none;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5vw;
+    width: 60%;
+    max-width: 800px;
+    height: auto;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+@media (max-width: 1200px) {
+    .warning {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .warning {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .warning {
+        font-size: 3.5vw;
+    }
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    color: #333;
+    width: 60%;
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+    .form-container h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #282172;
+    }
+
+    .form-container .form-control {
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        color: #333;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        transition: border-color 0.3s ease;
+    }
+
+        .form-container .form-control:focus {
+            border-color: #282172;
+            outline: none;
+        }
+
+    .form-container .btn-primary {
+        background-color: #282172;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .form-container .btn-primary:hover {
+            background-color: #1a1a4b;
+        }
+
+#statsBox {
+    background-color: #4a4a7b;
+    border-radius: 15px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+    #statsBox h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #f0f0f0;
+    }
+
+    #statsBox p {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    #statsBox span {
+        font-size: 24px;
+        font-weight: bold;
+        color: #87cefa;
+    }
+
+#pulseChart {
+    height: 500px;
+    width: 100%;
+}
+
+#pieChartContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    margin: 20px auto;
+}
+
+#pieChart {
+    height: 500px;
+    width: 100%;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.half-width {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#zoneStats {
+    color: #fff;
+}
+
+    #zoneStats h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+#zoneStatsList {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+    #zoneStatsList li {
+        margin-bottom: 10px;
+    }
+
+    #zoneStatsList span {
+        font-weight: bold;
+        color: #87cefa;
+    }

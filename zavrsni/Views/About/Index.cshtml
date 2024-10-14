@@ -1,0 +1,146 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PulseApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css">
+    <style>
+        body {
+            background-color: #282172;
+            color: #fff4f4;
+            font-family: 'Garamond', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 20px;
+            background-color: #f8f9fa; 
+            border-radius: 8px;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #282172; 
+            font-weight: bold; 
+        }
+
+        .section {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start; 
+            gap: 20px; 
+        }
+
+            .section img {
+                width: 200px;
+                height: auto;
+                border-radius: 8px;
+            }
+
+        .section-content {
+            flex: 1;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border: 1px solid #282172; 
+            border-radius: 8px;
+        }
+
+        .card-body {
+            background-color: #fff;
+            color: #333;
+            padding: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+
+        <div class="section">
+            <div class="section-content">
+                <h2>What are Cardiovascular Diseases?</h2>
+                <p><strong>Cardiovascular diseases (CVD)</strong> encompass a variety of conditions affecting the heart and blood vessels. These include coronary artery disease, heart attack, stroke, and hypertension. CVDs can lead to severe complications or even death if not managed properly. Factors contributing to CVDs include high cholesterol, high blood pressure, obesity, smoking, and genetic predisposition. Early detection and management are crucial in preventing serious outcomes.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-content">
+                <h2>Types of Cardiovascular Diseases</h2>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Coronary Artery Disease (CAD)</h3>
+                        <p><strong>Coronary artery disease (CAD)</strong> involves the narrowing or blockage of the coronary arteries due to atherosclerosis, where cholesterol and fatty deposits build up in the arterial walls. This can reduce blood flow to the heart muscle, potentially leading to chest pain (angina) or a heart attack. Risk factors include high cholesterol levels, smoking, and a sedentary lifestyle. Management often involves lifestyle changes and medications to improve heart health.</p>
+                        <img src="~/cad.jpg" alt="Coronary Artery Disease">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Heart Attack</h3>
+                        <p>A <strong>heart attack</strong> occurs when a blood clot obstructs blood flow to a part of the heart muscle, causing ischemia (lack of oxygen) and damage to the heart tissue. This condition is also known as myocardial infarction. Common symptoms include chest pain, shortness of breath, and nausea. Immediate treatment is critical to minimize heart damage and improve recovery outcomes. Risk factors include coronary artery disease, smoking, and obesity.</p>
+                        <img src="~/heart-attack.jpg" alt="Heart Attack">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Stroke</h3>
+                        <p>A <strong>stroke</strong> occurs when blood flow to a part of the brain is disrupted, either by a blockage (ischemic stroke) or bleeding (hemorrhagic stroke). This interruption in blood flow can lead to the death of brain cells and loss of neurological functions. Symptoms may include sudden numbness, confusion, and difficulty speaking. Risk factors include hypertension, diabetes, and high cholesterol. Rapid medical intervention is necessary to reduce the extent of brain damage.</p>
+                        <img src="~/stroke.png" alt="Stroke">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Hypertension</h3>
+                        <p><strong>Hypertension</strong>, or high blood pressure, is a condition characterized by elevated blood pressure levels that can damage the blood vessels and lead to serious complications such as heart disease, stroke, and kidney damage. It often has no symptoms, making regular monitoring essential. Contributing factors include a high-sodium diet, stress, and genetic predisposition. Effective management includes lifestyle changes and medications to control blood pressure.</p>
+                        <img src="~/hypertension.jpg" alt="Hypertension">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-content">
+                <h2>Importance of Monitoring Your Pulse</h2>
+                <p>Regularly monitoring your pulse offers valuable insights into your heart health. Tracking your pulse rate helps in:</p>
+                <ul>
+                    <li>Identifying potential heart conditions early, enabling timely intervention.</li>
+                    <li>Assessing the effectiveness of treatment for heart disease.</li>
+                    <li>Detecting irregularities such as arrhythmias that may need medical attention.</li>
+                    <li>Monitoring your fitness level and tracking progress over time.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-content">
+                <h2>Preventive Measures</h2>
+                <p>To minimize the risk of cardiovascular diseases, consider adopting these preventive measures:</p>
+                <ul>
+                    <li>Maintain a balanced diet low in saturated fats, cholesterol, and high in fiber from fruits, vegetables, and whole grains.</li>
+                    <li>Engage in regular physical activity, such as walking, swimming, or cycling, to improve cardiovascular health.</li>
+                    <li>Avoid smoking and limit alcohol consumption to reduce cardiovascular risk factors.</li>
+                    <li>Regularly monitor and manage blood pressure, cholesterol levels, and other health indicators.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

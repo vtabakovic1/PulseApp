@@ -34,6 +34,4 @@ Here is a preview of the app's interface, showcasing the real-time heart rate mo
 ![Logo](images/Picture5.png)
 ![Logo](images/Picture6.png)
 
-[Watch the demo video](images/PulseApp video.mkv)
-
-
+There is also a video showing how does the app work in the images folder. 

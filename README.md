@@ -24,4 +24,16 @@ This subsystem uses a NodeMCU ESP8266 microcontroller connected to a MAX30102 he
 
 ### Web Application Subsystem
 The core of PulseApp is built on the ASP.NET Core framework with a C# backend. The frontend uses HTML, CSS, and JavaScript to provide a user-friendly interface. Data from the IoT subsystem is received by the web server and displayed to healthcare providers in real-time.
+## Application interface
+Here is a preview of the app's interface, showcasing the real-time heart rate monitoring and data visualization features. 
+
+![Logo](images/Picture1.png)
+![Logo](images/Picture2.png)
+![Logo](images/Picture3.png)
+![Logo](images/Picture4.png)
+![Logo](images/Picture5.png)
+![Logo](images/Picture6.png)
+
+[Watch the demo video](images/PulseApp video.mp4)
+
 
